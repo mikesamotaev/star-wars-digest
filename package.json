@@ -36,6 +36,9 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.4.4"
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.4",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9"
   }
 }
