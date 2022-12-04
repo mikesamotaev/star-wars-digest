@@ -1,5 +1,4 @@
 # Star wars digest
-
 App for training different React developer skills.
 
 ## Episode 1
