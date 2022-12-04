@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import { AppRoutes } from './const';
 
 import HomePage from './pages/HomePage/HomePage';
 import CharactersPage from './pages/CharactersPage/CharactersPage';
@@ -16,15 +17,15 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="characters" element={<CharactersPage />} />
-        <Route path="characters/:id" element={<CharactersItemPage />} />
-        <Route path="films" element={<FilmsPage />} />
-        <Route path="films/:id" element={<FilmsItemPage />} />
-        <Route path="planets" element={<PlanetsPage />} />
-        <Route path="planets/:id" element={<PlanetsItemPage />} />
-        <Route path="starships" element={<StarshipsPage />} />
-        <Route path="starships/:id" element={<StarshipsItemPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path={AppRoutes.characters} element={<CharactersPage />} />
+        <Route path={AppRoutes.charactersItem} element={<CharactersItemPage />} />
+        <Route path={AppRoutes.films} element={<FilmsPage />} />
+        <Route path={AppRoutes.filmsItem} element={<FilmsItemPage />} />
+        <Route path={AppRoutes.planets} element={<PlanetsPage />} />
+        <Route path={AppRoutes.planetsItem} element={<PlanetsItemPage />} />
+        <Route path={AppRoutes.starships} element={<StarshipsPage />} />
+        <Route path={AppRoutes.starshipsItem} element={<StarshipsItemPage />} />
+        <Route path={AppRoutes.notFound} element={<NotFoundPage />} />
       </Routes>
     </div>
   );
