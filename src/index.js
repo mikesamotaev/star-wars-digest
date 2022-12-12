@@ -4,10 +4,11 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-
+import { fetchCharacters } from './store/asyncActions/fetchCharacters';
+import './index.css';
 import App from './App';
 
-import './index.css';
+store.dispatch(fetchCharacters());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
