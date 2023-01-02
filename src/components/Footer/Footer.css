@@ -1,0 +1,12 @@
+.footer {
+  background: #191919;
+}
+
+.footer__text {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 24px 0;
+}

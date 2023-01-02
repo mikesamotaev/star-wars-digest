@@ -8,8 +8,8 @@ import { fetchCharacters } from './store/asyncActions/fetchCharacters';
 import { fetchFilms } from './store/asyncActions/fetchFilms';
 import { fetchPlanets } from './store/asyncActions/fetchPlanets';
 import { fetchStarships } from './store/asyncActions/fetchStarships';
+import App from './components/App/App';
 import './index.css';
-import App from './App';
 
 store.dispatch(fetchCharacters());
 store.dispatch(fetchFilms());
