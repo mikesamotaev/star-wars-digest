@@ -6,11 +6,13 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 import { fetchCharacters } from './store/asyncActions/fetchCharacters';
 import { fetchFilms } from './store/asyncActions/fetchFilms';
+import { fetchPlanets } from './store/asyncActions/fetchPlanets';
 import './index.css';
 import App from './App';
 
 store.dispatch(fetchCharacters());
 store.dispatch(fetchFilms());
+store.dispatch(fetchPlanets());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
