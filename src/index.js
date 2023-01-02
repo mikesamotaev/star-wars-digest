@@ -4,10 +4,17 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-
+import { fetchCharacters } from './store/asyncActions/fetchCharacters';
+import { fetchFilms } from './store/asyncActions/fetchFilms';
+import { fetchPlanets } from './store/asyncActions/fetchPlanets';
+import { fetchStarships } from './store/asyncActions/fetchStarships';
+import './index.css';
 import App from './App';
 
-import './index.css';
+store.dispatch(fetchCharacters());
+store.dispatch(fetchFilms());
+store.dispatch(fetchPlanets());
+store.dispatch(fetchStarships());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
